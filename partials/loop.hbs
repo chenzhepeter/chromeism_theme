@@ -1,0 +1,26 @@
+<div class="list-group">
+  {{#foreach posts}}
+    <a href="{{url}}" class="list-group-item {{post_class}}">
+      <div class="media col-sm-4">
+        <img class="media-object img-responsive" src="{{image}}">
+      </div>
+      <div class="col-sm-8">
+        <h4 class="list-group-item-heading">{{{title}}}</h4>
+        <ul class="list-inline list-unstyled">
+          <li>
+            <span><i class="glyphicon glyphicon-time"></i>
+              <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+            </span>
+          </li>
+        </ul>
+        <p class="list-group-item-text">{{excerpt words="45"}}</p>
+        </section>
+        </p>
+      </div>
+    </a>
+  {{/foreach}}
+</div>
+
+<div class="text-center">
+  {{pagination}}
+</div>

@@ -1,0 +1,71 @@
+/* ============================================================ */
+/* General Appearance */
+/* ============================================================ */
+
+body {
+  margin-top: 75px;
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #555;
+  text-decoration: none;
+}
+hr {
+  margin: 40px 0;
+}
+img {
+  margin: 20px auto;
+  display: block;
+  margin: 20px auto;
+  width: auto;
+  max-width: 100%;
+}
+h1 {
+  margin: 30px 0;
+}
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.8;
+  color: #555;
+}
+/* ============================================================ */
+/* Bootstrap Specific */
+/* ============================================================ */
+
+a.list-group-item {
+  height: auto;
+  min-height: 220px;
+  padding: 20px 20px;
+}
+.list-group-item {
+  border: 0;
+}
+a.list-group-item .list-group-item-heading {
+  color: #555;
+}
+/* ============================================================ */
+/* Class Specific */
+/* ============================================================ */
+
+.main-block {
+  max-width: 900px;
+}
+.social-icon {
+  font-size: 18px;
+  padding: 5px;
+  width: 30px;
+  text-align: center;
+  background-color: #bbb;
+  color: #fff;
+}
+.social-icon:hover {
+  background-color: #999;
+  color: #fff;
+}

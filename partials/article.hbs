@@ -1,0 +1,31 @@
+{{#post}}
+  <img class="media-object img-responsive center-block" src="{{image}}">
+
+  <div class="text-center">
+    <h1><a href="{{url}}">{{title}}</a>
+    </h1>
+    <h4>
+      <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY "}}</time>by {{author.name}}</h4>
+  </div>
+  {{content}}
+  <div class="row">
+    <span>Tagged:</span>{{tags}}
+
+    <span class="share pull-right">
+
+      <a class="social-icon" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <i class="fa fa-google-plus"></i>
+        <span class="hidden">Google+</span>
+      </a>
+      <a class="social-icon" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fa fa-twitter"></i>
+        <span class="hidden">Twitter</span>
+      </a>
+      <a class="social-icon" href="http://service.weibo.com/share/share.php?url={{url absolute="true"}}&title={{encode title}}" onclick="window.open(this.href, 'weibo-share', 'width=550,height=235');return false;">
+        <i class="fa fa-weibo"></i>
+        <span class="hidden">Weibo</span>
+      </a>
+
+    </span>
+  </div>
+{{/post}}
